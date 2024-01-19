@@ -1,0 +1,189 @@
+footer {
+  padding: 2rem 0;
+  background-color: #27272b;
+
+  .footer-top {
+    padding: 3rem 0;
+    display: flex;
+    gap: 20px;
+
+    .tasty {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      // margin-bottom: 30px;
+      h1 {
+        font-size: 24px;
+        color: #fff;
+      }
+      p {
+        font-size: 16px;
+        color: gray;
+      }
+      .icons {
+        display: flex;
+        gap: 10px;
+        i {
+          padding: 15px;
+          font-size: 15px;
+          color: #fff;
+          background-color: #000;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .hours {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      // align-items: center;
+      h1 {
+        font-size: 24px;
+        color: #fff;
+        // margin-left: 10px;
+      }
+      nav {
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          padding-left: 0;
+          li {
+            a {
+              color: gray;
+              font-size: 16px;
+              span {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      // align-items: center;
+      h1 {
+        font-size: 24px;
+        color: #fff;
+        // margin-left: 10px;
+      }
+      nav {
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          padding-left: 0;
+          li {
+            a {
+              color: gray;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .newsletter {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h1 {
+        font-size: 24px;
+        color: #fff;
+      }
+      p {
+        color: gray;
+        font-size: 16px;
+      }
+      .input {
+        position: relative;
+        input {
+          padding: 10px 15px;
+          border: 1px solid gray;
+          background-color: transparent;
+        }
+        i {
+          position: absolute;
+          color: gray;
+          font-size: 25px;
+          top: 10px;
+          right: 60px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 2rem 0;
+    p {
+      text-align: center;
+      font-size: 16px;
+      color: gray;
+
+      i {
+        color: gray;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+      .input {
+        i {
+          display: none;
+        }
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+      .newsletter {
+        .input {
+          input {
+            width: 100px;
+          }
+          i {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.toTop {
+  position: fixed;
+  bottom: 16px;
+  right: 10px;
+  opacity: 0;
+  a {
+    padding: 15px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}

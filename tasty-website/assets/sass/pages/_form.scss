@@ -1,0 +1,30 @@
+#form {
+  padding: 2rem 0;
+
+  .form-section {
+    margin-top: 150px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+
+    input {
+      width: 300px;
+      margin-bottom: 5px;
+      padding: 6px 15px;
+      border: 1px solid rgb(4, 4, 4);
+      background-color: #fff;
+    }
+    #submit {
+      background-color: rgb(9, 9, 9);
+      color: #fff;
+    }
+    select {
+      margin: 10px 0;
+      width: 300px;
+      padding: 5px 10px;
+    }
+  }
+}

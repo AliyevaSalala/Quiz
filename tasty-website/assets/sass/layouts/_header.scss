@@ -1,0 +1,78 @@
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1111;
+  transition: all 0.7s;
+  padding: 2rem 0;
+  .header {
+    @include flexbox();
+
+    button {
+      color: #fff;
+      font-size: 20px;
+      border: 2px solid #fff;
+      background-color: transparent;
+      padding: 5px 10px;
+    }
+    nav {
+      ul {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        li {
+          a {
+            font-size: 16px;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .fa-solid {
+      font-size: 20px;
+      color: #fff;
+      cursor: pointer;
+      border: 2px solid #fff;
+      padding: 10px 20px;
+    }
+    .fa-bars {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .header {
+      nav {
+        // display: none;
+        position: fixed;
+        top: 0;
+        width: 50%;
+        left: -800px;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all 0.7s;
+        height: 100%;
+        ul {
+          flex-direction: column;
+          gap: 20px;
+          padding: 40px;
+        }
+
+        &.show {
+          left: 0;
+        }
+      }
+      .fa-bars {
+        display: block;
+      }
+    }
+  }
+
+  &.header-scroll {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 11111;
+    top: 0;
+    left: 0;
+    padding: 1.3rem 0;
+  }
+}

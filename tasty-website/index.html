@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mulish:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER-SECTION -->
+
+    <header>
+      <div class="container">
+        <div class="header">
+          <button>Tasty</button>
+
+          <nav>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li>
+                <a href="./fav.html">Favorite <sup class="counter">0</sup></a>
+              </li>
+              <li><a href="./form.html">From</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANNER-SECTION -->
+
+    <section id="banner">
+      <div class="banner-section">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active item-contact">
+              <div class="empty">
+                <div class="item-info">
+                  <h1>
+                    Book a table for yourself at a <br />
+                    time convenient for you
+                  </h1>
+                  <button>Book a Table</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item item-contact">
+              <div class="empty">
+                <div class="item-info">
+                  <h1>Tasty & Delicios Food</h1>
+                  <button>Book a Table</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item item-contact">
+              <div class="empty">
+                <div class="item-info">
+                  <h1>Tasty & Delicios Food</h1>
+                  <button>Book a Table</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABout-section -->
+
+    <section id="about">
+      <div class="container">
+        <div class="about-section">
+          <div class="about-left">
+            <img src="./assets/images/about-2.jpg" alt="" />
+          </div>
+          <div class="about-right">
+            <p>ABOUT TASTY</p>
+            <h1>Our chef cooks the most delicious food for you</h1>
+            <h6>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.
+            </h6>
+            <h6>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product-section -->
+
+    <section id="product">
+      <div class="container">
+        <div class="product-section">
+          <div class="info">
+            <p>OUR MENU</p>
+            <h1>Discover Our Exclusive Menu</h1>
+          </div>
+
+          <div class="menu-btn">
+            <button class="categoryBtn active">
+              <i class="fa-solid fa-champagne-glasses"></i>Main
+            </button>
+            <button class="categoryBtn">
+              <i class="fa-solid fa-stroopwafel"></i>Dessert
+            </button>
+            <button class="categoryBtn">
+              <i class="fa-solid fa-cookie"></i>Drinks
+            </button>
+          </div>
+
+          <div class="menu-cards">
+            <!-- <div class="menu-card">
+              <div class="card-right">
+                <img src="./assets/images/dessert-1.jpg" alt="" />
+                <div>
+                  <h5>Grilled Beef with potatoes</h5>
+                  <p>Meat, Potatoes, Rice, Tomatoe</p>
+                </div>
+              </div>
+              <div class="card-left">
+                <p>Price</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG-SECTION -->
+
+    <section id="blog">
+      <div class="container">
+        <div class="blog-section">
+          <div class="info">
+            <p>Blog</p>
+            <h1>Recent Blog</h1>
+          </div>
+
+          <div class="blog-cards">
+            <div class="blog-card">
+              <img src="./assets/images/image_5.jpg" alt="" />
+              <div class="texts">
+                <p>July 7, 2018 Admin</p>
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <div class="text-bottom">
+                  <a href="#">Read More</a>
+                  <a href="#"><i class="fa-solid fa-comment"></i>3</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-card">
+              <img src="./assets/images/image_6.jpg" alt="" />
+              <div class="texts">
+                <p>July 7, 2018 Admin</p>
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <div class="text-bottom">
+                  <a href="#">Read More</a>
+                  <a href="#"><i class="fa-solid fa-comment"></i>3</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-card">
+              <img src="./assets/images/image_7.jpg" alt="" />
+              <div class="texts">
+                <p>July 7, 2018 Admin</p>
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <div class="text-bottom">
+                  <a href="#">Read More</a>
+                  <a href="#"><i class="fa-solid fa-comment"></i>3</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER-SECTION -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="tasty">
+            <h1>Tasty</h1>
+            <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </p>
+            <div class="icons">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="hours">
+            <h1>Opening Hours</h1>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Monday: <span>08:-22:00</span></a>
+                </li>
+                <li>
+                  <a href="#">Tuesday: <span>08:-22:00</span></a>
+                </li>
+                <li>
+                  <a href="#">Wednesday: <span>08:-22:00</span></a>
+                </li>
+                <li>
+                  <a href="#">Thursday: <span>08:-22:00</span></a>
+                </li>
+                <li>
+                  <a href="#">Friday: <span>08:-22:00</span></a>
+                </li>
+                <li>
+                  <a href="#">Saturday: <span>08:-22:00</span></a>
+                </li>
+                <li>
+                  <a href="#">Sunday: <span>08:-22:00</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="contact">
+            <h1>Contact Information</h1>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#"
+                    >198 West 21th Street, Suite 721 New York NY 10016</a
+                  >
+                </li>
+                <li><a href="tel:+994 55 796 26 07">+994 55 796 26 07</a></li>
+                <li>
+                  <a href="#">aselale5809@gmail.com</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="newsletter">
+            <h1>Newsletter</h1>
+            <p>
+              Far far away, behind the word mountains, far from the countries.
+            </p>
+            <div class="input">
+              <input type="text" placeholder="Subscribe" />
+              <i class="fa-brands fa-telegram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Copyright ©2024 All rights reserved | This template is made with by
+            Colorlib
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toTop">
+      <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
