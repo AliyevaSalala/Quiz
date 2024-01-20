@@ -22,6 +22,7 @@ function drawCards(data) {
   });
 }
 
+
 drawCards(favsProducts);
 
 function calculate(count) {

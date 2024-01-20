@@ -7,6 +7,8 @@ const search = document.querySelector("#search");
 const sortBtn = document.querySelector(".sort-btn");
 const select = document.querySelector("select");
 
+let favsProducts = getItemToLocalStorage();
+
 let array = [];
 let menuCopy = [];
 
@@ -70,6 +72,8 @@ async function deleteBtn(id, btn) {
   if (confirm("silmek istedigine eminmisiniz??")) {
     await axios.delete(`${BASE_URL}/${id}`);
     btn.closest("tr").remove();
+    favsProducts = favsProducts.filter((item) => item.id !== id);
+    setItemToLocalStorage(favsProducts);
   }
 }
 
@@ -78,6 +82,7 @@ async function deleteBtn(id, btn) {
 let editId = null;
 
 async function editBtn(id) {
+  window.scrollTo(0, 0);
   editId = id;
   const res = await axios(`${BASE_URL}/${id}`);
 

@@ -61,10 +61,16 @@ categoryBtn.forEach((item) => {
     let filtered = menus.filter((item) => item.category === categoryName);
 
     drawCards(filtered);
+    // window.location.reload(true);
   });
 });
 
 // ==========FAVORITE
+
+//   if (favoriStatus === "true") {
+//     document.body.classList.add("favori");
+//   }
+// });
 
 let favsProducts = getItemToLocalStorage();
 calculate(favsProducts.length);
@@ -88,6 +94,8 @@ function addToFav(id, icon) {
 
   setItemToLocalStorage(favs);
   calculate(favs.length);
+
+  // window.location.reload();
 }
 
 function calculate(count) {

@@ -1,14 +1,6 @@
 {
   "menus": [
     {
-      "id": 3,
-      "image": "./assets/images/dessert-1.jpg",
-      "title": "Fruit Vanilla Ice Cream",
-      "desc": "Meat, Potatoes, Rice, Tomatoe",
-      "price": 13,
-      "category": "Main"
-    },
-    {
       "id": 4,
       "image": "./assets/images/dessert-1.jpg",
       "title": "Fruit Vanilla Ice Cream",
@@ -33,12 +25,12 @@
       "id": 7
     },
     {
-      "image": "./assets/images/drink-2.jpg",
-      "title": "APPLE",
-      "desc": "Meat, Potatoes, Rice, Tomatoe",
-      "price": "5",
-      "category": "Drinks",
-      "id": 9
+      "image": "./assets/images/dessert-3.jpg",
+      "title": "askjnasknksanxkls",
+      "desc": "sclkmslkcmlmsc",
+      "price": "4",
+      "category": "Main",
+      "id": 10
     }
   ]
 }
